@@ -1,6 +1,6 @@
 import React from "react";
 const Avatar = ({ name, className,src}) => {
-  const initial = name? name.charAt(0).toUpperCase():"U";
+  const initial = name?.charAt(0).toUpperCase()??"u";
   return (
     <div className={`w-10 h-10 rounded-full overflow-hidden ${className}`}>
       {src ? (

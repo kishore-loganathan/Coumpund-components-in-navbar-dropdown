@@ -2,9 +2,9 @@ import Dropdown from "./Dropdown";
 import Toggle from "./Toggle";
 import Menu from "./Menu";
 import Item from "./Item";
-
-Dropdown.Toggle = Toggle;
+import Line from "./Line";
+Dropdown.Trigger = Toggle;
 Dropdown.Menu = Menu;
 Dropdown.Item = Item;
-
+Dropdown.line=Line;
 export default Dropdown;

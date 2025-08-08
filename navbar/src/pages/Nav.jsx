@@ -20,7 +20,7 @@ const Nav = ({ pages, user }) => {
           ))}
         </div>
         <Dropdown>
-          <Dropdown.Toggle>
+          <Dropdown.Trigger>
             <Avatar
               name={null}
               className="bg-black text-white cursor-pointer"
@@ -28,7 +28,7 @@ const Nav = ({ pages, user }) => {
                 "https://img.freepik.com/free-photo/smiling-young-male-professional-standing-with-arms-crossed-while-making-eye-contact-against-isolated-background_662251-838.jpg"
               }
             />
-          </Dropdown.Toggle>
+          </Dropdown.Trigger>
           <Dropdown.Menu>
             <Dropdown.Item>
               <Avatar
@@ -40,10 +40,12 @@ const Nav = ({ pages, user }) => {
               ></Avatar>
               <div className=" font-light">{user[0].email}</div>
             </Dropdown.Item>
-            <hr className="my-1 border-gray-400" />
-            <Dropdown.Item className="text-amber-600"> subscription</Dropdown.Item>
+            <Dropdown.line />
+            <Dropdown.Item className="text-amber-600">
+              subscription
+            </Dropdown.Item>
             <Dropdown.Item> Settings</Dropdown.Item>
-            <hr className="my-1 border-gray-400" />
+            <Dropdown.line  className="border-black"/>
             <Dropdown.Item>Logout</Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>
